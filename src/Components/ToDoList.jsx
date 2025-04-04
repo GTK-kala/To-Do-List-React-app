@@ -17,7 +17,7 @@ function ToDoList() {
 
      }
 
-     let moveTaskup = (index) =>{
+     let moveTaskUp = (index) =>{
  
      }
 
@@ -41,6 +41,8 @@ function ToDoList() {
                 <li key={index}>
                   <span className="text">{tasks}</span>
                   <button className="delete-button" onClick={() => DeleteTask(index)}>Delete</button>
+                  <button className="move-button" onClick={() => moveTaskUp(index)}>Up</button>
+                  <button className="move-button" onClick={() => moveTaskDowm(index)}>Down</button>
                 </li>
              )}
           </ol>
