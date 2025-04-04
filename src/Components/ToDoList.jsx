@@ -13,11 +13,11 @@ function ToDoList() {
         if(task === ""){
             alert("Please enter a task");
         }
-        if(tasks.includes(newTask)){
+        if(tasks.includes(task)){
             alert("Task already exists");           
         }
-        setTasks((tasks) =>[...tasks, newTask]);
-        setnewTask("");
+        setTasks((tasks) =>[...tasks, task]);
+        setTask("");
      }
 
      let DeleteTask = (index) =>{
@@ -49,7 +49,7 @@ function ToDoList() {
             <input 
              type="text"
              placeholder="Enter a task..." 
-             value = {newTask} 
+             value = {task} 
              onChange={handelInputChange} />
             <button className="add-button" onClick={AddTasks}>Add</button>
           </div>
