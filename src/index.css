@@ -70,7 +70,7 @@ li{
   align-items: center;
 }
 .text{
-  flex-grow: 1; /* This will make the text take up the remaining space */
+  flex-grow: 1; 
 }
 li:hover{
   background-color: hsl(0, 0%, 90%);
@@ -84,5 +84,4 @@ li:hover{
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
-
 }
